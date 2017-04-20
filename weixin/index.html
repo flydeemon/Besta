@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="CN">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <!-- 强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/swiper.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/css.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="searchdiv" id="top">
+            <span class="icon-space">|</span>
+            <input type="text" placeholder="搜索商品 分类 风格" id="search">
+            <div class="search-text">
+                <img class="search-cancel dis-none" src="images/icon_delete12.png">
+                <img class="search-icon" src="images/icon_search.png">
+            </div>
+            <ul class="search-box dis-none"></ul>
+            <a href="index.html" class="icon-cart" />
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/sy.png"></div>
+                <div class="swiper-slide"><img src="images/sy.png"></div>
+                <div class="swiper-slide"><img src="images/sy.png"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <ul class="nav_type overflowh uul">
+            <li>
+                <a href="goods_brand_street.html"><div>
+                    <img src="images/icon_navlist1.png">
+                </div></a><br>
+                品牌街
+            </li>
+            <li>
+                <a href="experience_pavilion.html"><div>
+                    <img src="images/icon_navlist2.png">
+                </div></a><br>
+                体验馆
+            </li>
+            <li>
+                <a href="mycenter.html"><div>
+                    <img src="images/icon_navlist3.png">
+                </div></a><br>
+                个人中心
+            </li>
+            <li>
+                <a href="shopping_cart.html"><div>
+                    <img src="images/icon_navlist4.png">
+                </div></a><br>
+                购物车
+            </li>
+            <li>
+                <a href="goods_categories.html"><div>
+                    <img src="images/icon_navlist5.png">
+                </div></a><br>
+                商品分类
+            </li>
+        </ul>
+        <div class="style_type backgroundn overflowh">
+            <ul class="uul overflowh style_typeul">
+                <a href="javascript:;"><li>
+                    欧式风格
+                    <img src="images/icon_style1.png">
+                </li></a>
+                <a href="javascript:;"><li>
+                    美式风格
+                    <img src="images/icon_style2.png">
+                </li></a>
+                <a href="javascript:;"><li>
+                    亚洲风格
+                    <img src="images/icon_style3.png">
+                </li></a>
+                <a href="javascript:;"><li>
+                    现代风格
+                    <img src="images/icon_style4.png">
+                </li></a>
+            </ul>
+
+            <div class="banner"><a href="index.html"><img src="images/brand.jpg" class="img-responsive" alt="广告图"></a></div>
+
+            <p class="text-center"><span class="index_title fontweightb">畅销推荐</span></p>
+
+            <div class="row selling">
+                <div class="col-xs-6">
+                    <a href="new_goods.html">
+                        <p class="selling-title color-rgb2517578">新品上市</p>
+                        <p class="fontsize2 color-rgb102">必有一款你心仪</p>
+                        <img src="images/icon_picture.png" class="img-responsive img-circle">
+                    </a>
+                </div>
+                <div class="col-xs-6">
+                    <a href="hot_goods.html">
+                        <p class="selling-title color-rgb25513838">热门商品</p>
+                        <p class="fontsize2 color-rgb102">品质保证</p>
+                        <img src="images/icon_picture_b.png" class="img-responsive img-circle">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 商品推荐 -->
+        <p class="text-center"><span class="index_title fontweightb">商品推荐</span></p>
+        <ul class="row goods-list color-rgb255" id="goods1">
+            <li class="col-xs-6 goods-item">
+                <a href="#">
+                    <img src="images/index_img1.jpg" class="goods-pic">
+                    <p class="fontsize3 text-ellipsis">LED吸顶灯现代简约卧室灯客厅灯正长 方形餐厅阳台铝材边灯具灯饰</p>
+                    <span class="fontsize5 fontweight color-rgb25513838">￥218</span>
+                </a>
+                <img src="images/icon_cart.png" class="shopping-cart" data-toggle="modal" data-target="#addModal">
+            </li>
+            <li class="col-xs-6 goods-item">
+                <a href="javascript:;">
+                    <img src="images/index_img2.jpg" class="goods-pic">
+                    <p class="fontsize3 text-ellipsis">LED吸顶灯现代简约卧室灯客厅灯正长 方形餐厅阳台铝材边灯具灯饰</p>
+                    <span class="fontsize5 fontweight color-rgb25513838">￥218</span>
+                </a>
+                <img src="images/icon_cart.png" class="shopping-cart" data-toggle="modal" data-target="#addModal">
+            </li>
+            <li class="col-xs-6 goods-item">
+                <a href="#">
+                    <img src="images/index_img1.jpg" class="goods-pic">
+                    <p class="fontsize3 text-ellipsis">LED吸顶灯现代简约卧室灯客厅灯正长 方形餐厅阳台铝材边灯具灯饰</p>
+                    <span class="fontsize5 fontweight color-rgb25513838">￥218</span>
+                </a>
+                <img src="images/icon_cart.png" class="shopping-cart" data-toggle="modal" data-target="#addModal">
+            </li>
+            <li class="col-xs-6 goods-item">
+                <a href="javascript:;">
+                    <img src="images/index_img2.jpg" class="goods-pic">
+                    <p class="fontsize3 text-ellipsis">LED吸顶灯现代简约卧室灯客厅灯正长 方形餐厅阳台铝材边灯具灯饰</p>
+                    <span class="fontsize5 fontweight color-rgb25513838">￥218</span>
+                </a>
+                <img src="images/icon_cart.png" class="shopping-cart" data-toggle="modal" data-target="#addModal">
+            </li>
+        </ul>
+        <ul class="row goods-list goods-ul" id="goods2">
+            <li class="col-xs-6 goods-item">
+                <a href="#">
+                    <img src="images/index_img1.jpg" class="goods-pic">
+                    <p class="fontsize3 text-ellipsis">LED吸顶灯现代简约卧室灯客厅灯正长 方形餐厅阳台铝材边灯具灯饰</p>
+                    <span class="fontsize5 fontweight color-rgb25513838">￥218</span>
+                </a>
+                <img src="images/icon_cart.png" class="shopping-cart" data-toggle="modal" data-target="#addModal">
+            </li>
+            <li class="col-xs-6 goods-item">
+                <a href="javascript:;">
+                    <img src="images/index_img2.jpg" class="goods-pic">
+                    <p class="fontsize3 text-ellipsis">LED吸顶灯现代简约卧室灯客厅灯正长 方形餐厅阳台铝材边灯具灯饰</p>
+                    <span class="fontsize5 fontweight color-rgb25513838">￥218</span>
+                </a>
+                <img src="images/icon_cart.png" class="shopping-cart" data-toggle="modal" data-target="#addModal">
+            </li>
+            <li class="col-xs-6 goods-item">
+                <a href="#">
+                    <img src="images/index_img1.jpg" class="goods-pic">
+                    <p class="fontsize3 text-ellipsis">LED吸顶灯现代简约卧室灯客厅灯正长 方形餐厅阳台铝材边灯具灯饰</p>
+                    <span class="fontsize5 fontweight color-rgb25513838">￥218</span>
+                </a>
+                <img src="images/icon_cart.png" class="shopping-cart" data-toggle="modal" data-target="#addModal">
+            </li>
+            <li class="col-xs-6 goods-item">
+                <a href="javascript:;">
+                    <img src="images/index_img2.jpg" class="goods-pic">
+                    <p class="fontsize3 text-ellipsis">LED吸顶灯现代简约卧室灯客厅灯正长 方形餐厅阳台铝材边灯具灯饰</p>
+                    <span class="fontsize5 fontweight color-rgb25513838">￥218</span>
+                </a>
+                <img src="images/icon_cart.png" class="shopping-cart" data-toggle="modal" data-target="#addModal">
+            </li>
+        </ul>
+        <div class="slide_dot product_dot" id="product_dot1">
+            <ul class="slide_dot_ul" id="product_dot_ul1">
+                <li class="active" id="goods-li-1"></li>
+                <li id="goods-li-2"></li>
+            </ul>
+        </div>
+        <a href="javascript:;"><p class="text-center color333 fontsize2">更多>></p></a>
+    </div>
+
+
+
+    <ul class="foot uul overflowh">
+       <a href="index.html"><li class="footli_cur footli_last">
+           <img src="images/icon_foot1_b.png">首页
+       </li></a>
+       <a href="goods_categories.html"><li>
+           <img src="images/icon_foot2.png">分类
+       </li></a>
+       <a href="shopping_cart.html"><li>
+           <img src="images/icon_foot3.png">购物车
+       </li></a>
+       <a href="mycenter.html"><li>
+           <img src="images/icon_foot4.png">个人中心
+       </li></a>
+    </ul>
+
+    <div class="back-top"><a href="#top"><img src="images/icon_top.png"></a></div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-parent">
+            <div class="modal-content shopping-modal">
+                <p >√ 加入购物车</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>体验馆-详情</title>
+    <!-- 强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/css.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body class="backgroundfafafa">
+<div class="ep_head overflowh text-center">
+    <img src="images/icon_arrows_right.png" class="floatl ep_head_img" onclick="history.go(-1)">广州天河车陂旗舰店
+    <a href="index.html"><img src="images/icon_foot1.png" class="floatr"></a>
+</div>
+<div class="ep_content padding10 epd_details">
+    <p class="ep_title">广东省广州市天河区车陂旗舰店</p>
+    <div>
+        <span>服务热线</span>4008826998
+    </div>
+    <div>
+        <span>营业时间</span>08：00-18:30
+    </div>
+    <div>
+        <span>本馆地址</span>广东省广州市天河区中山大道中车陂南118号中山大道中车陂南118号
+    </div>
+    <div>
+        <span>服务热线</span>4008826998
+    </div>
+    <div>
+        <span>停车位</span>有
+    </div>
+    <div>
+        <span>展厅面积</span>3000平方
+    </div>
+    <div>
+        <span>交通路线</span>查询交通路线
+    </div>
+    <div class="marginb10 paddingb12">
+        <input type="button" value="免费获取地址" class="paddingr15" data-toggle="modal" data-target="#myModal">
+        <input type="button" value="电话咨询" class="paddingr15">
+    </div>
+    <ul class="epd_ul uul marginb10 overflowh">
+        <a href="#"><li><img src="images/experience_pavilion_img.jpg"></li></a>
+        <a href="#"><li><img src="images/experience_pavilion_img.jpg"></li></a>
+        <a href="#"><li><img src="images/experience_pavilion_img.jpg"></li></a>
+        <a href="#"><li><img src="images/experience_pavilion_img.jpg"></li></a>
+    </ul>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="col-xs-1 col-sm-2">&nbsp;</div>
+        <div class="modal-content col-xs-10 col-sm-8 ep_getaddress" style="margin-top: 142px;">
+            <input type="text" placeholder="请输入您的手机号">
+            <p class="overflowh">
+                <input type="text" placeholder="验证码" class="floatl">
+                <img src="images/icon_verification_code.png" class="floatr">
+            </p>
+            <input type="button" value="免费发送地址到手机">
+            <input type="button" value="取消操作" data-dismiss="modal">
+        </div>
+    </div>
+</div>
+<script>
+    $('.ep_getaddress').css("margin-top",($(window).height()-$('.ep_getaddress').height())/4+"px");
+</script>
+</body>
+</html>

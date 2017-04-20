@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <!-- 强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/css.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body class="backgroundfafafa">
+<div class="ep_head overflowh text-center">
+    <img src="images/icon_arrows_right.png" class="floatl ep_head_img" onclick="history.go(-1)">我的订单
+</div>
+<ul class="myorder_ul">
+    <a href="#"><li><img src="images/icon_myorder1.png">所有订单</li></a>
+    <a href="myorder_obligation.html"><li><img src="images/icon_myorder2.png">待付款</li></a>
+    <a href="myorder_waiting_end.html"><li><img src="images/icon_myorder3.png">待付尾款</li></a>
+    <a href="myorder_waiting_delivery.html"><li><img src="images/icon_myorder4.png">待发货</li></a>
+    <a href="myorder_waiting_receipt.html"><li><img src="images/icon_myorder5.png">待收货</li></a>
+    <a href="myorder_waiting_install.html"><li><img src="images/icon_myorder6.png">待安装</li></a>
+    <a href="myorder_waiting_evaluation.html"><li><img src="images/icon_myorder7.png">待评价</li></a>
+</ul>
+</body>
+</html>
